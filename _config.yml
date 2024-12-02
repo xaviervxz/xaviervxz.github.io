@@ -35,7 +35,7 @@ include:
   - _pages
 
 footer_scripts:
-  - https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js
+  - assets/scripts/nutshell.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
