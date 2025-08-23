@@ -1,0 +1,310 @@
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('core-js/modules/es.array.reduce.js'), require('core-js/modules/web.dom-collections.iterator.js'), require('core-js/modules/es.regexp.exec.js'), require('core-js/modules/es.string.match.js'), require('core-js/modules/es.string.replace.js'), require('rdf'), require('d3'), require('rdf-viz')) :
+    typeof define === 'function' && define.amd ? define(['core-js/modules/es.array.reduce.js', 'core-js/modules/web.dom-collections.iterator.js', 'core-js/modules/es.regexp.exec.js', 'core-js/modules/es.string.match.js', 'core-js/modules/es.string.replace.js', 'rdf', 'd3', 'rdf-viz'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ForceRDF = factory(null, null, null, null, null, global.RDF, global.d3, global.RDFViz));
+})(this, (function (es_array_reduce_js, web_domCollections_iterator_js, es_regexp_exec_js, es_string_match_js, es_string_replace_js, RDF, d3, RDFViz) { 'use strict';
+
+    function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+    function _interopNamespace(e) {
+        if (e && e.__esModule) return e;
+        var n = Object.create(null);
+        if (e) {
+            Object.keys(e).forEach(function (k) {
+                if (k !== 'default') {
+                    var d = Object.getOwnPropertyDescriptor(e, k);
+                    Object.defineProperty(n, k, d.get ? d : {
+                        enumerable: true,
+                        get: function () { return e[k]; }
+                    });
+                }
+            });
+        }
+        n["default"] = e;
+        return Object.freeze(n);
+    }
+
+    var RDF__namespace = /*#__PURE__*/_interopNamespace(RDF);
+    var d3__namespace = /*#__PURE__*/_interopNamespace(d3);
+    var RDFViz__default = /*#__PURE__*/_interopDefaultLegacy(RDFViz);
+
+    /*
+    import {
+        forceLink, forceManyBody, forceCenter, forceCollide, forceSimulation
+    } from 'd3-force';
+    */
+
+    //console.log(d3);
+
+    class ForceRDF extends RDFViz__default["default"] {
+      constructor(graph) {
+        let rdfParams = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        let d3Params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+        super(graph, rdfParams, d3Params);
+
+        // these should be inputs
+        const width = d3Params.width || 1000;
+        const height = d3Params.height || 1000;
+
+        // initialize the svg representation
+        const svg = d3__namespace.create('svg').attr('viewBox', [-width / 2, -height / 2, width, height]);
+        // .attr("style", "width: 100%; height: 100%;");
+        if (d3Params.width) svg.attr('width', d3Params.width);
+        if (d3Params.height) svg.attr('height', d3Params.height);
+        if (d3Params.preserveAspectRatio) svg.attr('preserveAspectRatio', d3Params.preserveAspectRatio);
+
+        // this may be stupid
+        this.svg = svg.node();
+        this.svg.forceGraph = this;
+        this.svg.addEventListener('graph', e => {
+          const {
+            subject: s,
+            predicate: p,
+            object: o,
+            selected: t
+          } = e.detail;
+          const n = e.target;
+          const g = (n.ownerSVGElement || n).forceGraph;
+
+          // invert the inverses
+          const i = Object.entries(g.inverses).reduce((h, _ref) => {
+            let [k, v] = _ref;
+            h[g.abbreviate(k)] = g.abbreviate(v);
+            return h;
+          }, {});
+          //console.log(o);
+
+          // edges
+          let sel = "g.edge line[about~=\"".concat(s, "\"][rel~=\"").concat(p, "\"][resource~=\"").concat(o, "\"]");
+          if (i[p]) sel += ", g.edge line[about~=\"".concat(o, "\"][rel~=\"").concat(i[p], "\"][resource~=\"").concat(s, "\"]");
+          const m = n.querySelectorAll(sel);
+          Array.from(m).forEach(c => c.classList[t ? 'add' : 'remove']('subject'));
+
+          // nodes
+          const x = n.querySelectorAll("g.node a[about=\"".concat(o, "\"]"));
+          Array.from(x).forEach(c => c.classList[t ? 'add' : 'remove']('subject'));
+        });
+      }
+      init() {
+        // select the svg into the d3 wrapper
+        const svg = d3__namespace.select(this.svg);
+
+        // make these shorter to type lol
+        const graph = this.graph,
+          a = this.a,
+          ns = this.ns,
+          validTypes = this.validTypes,
+          labels = this.labels,
+          inverses = this.inverses,
+          prefer = this.prefer,
+          symmetric = this.symmetric;
+
+        // first we get all the nodes of valid types
+        const nmap = {};
+        const nodes = this.nodes = [];
+        graph.match(null, a).forEach(stmt => {
+          if (graph.has([stmt.object], validTypes)) {
+            // get the label
+            let label = stmt.subject.value;
+            const lp = [ns.dct.title, ns.rdfs.label];
+
+            // unshift label for type
+            if (labels[stmt.object.value]) lp.unshift(labels[stmt.object.value]);
+            for (let i = 0; i < lp.length; i++) {
+              let x = graph.match(stmt.subject, lp[i]).filter(s => RDF__namespace.isLiteral(s.object));
+              if (x.length > 0) {
+                label = x[0].object.value;
+                break;
+              }
+            }
+
+            // XXX we might no longer need this
+            const s = this.rewriteUUID(stmt.subject);
+
+            // add this mess to the list
+            nodes.push(nmap[stmt.subject.value] = {
+              id: s.value,
+              // for d3
+              title: label,
+              // for d3
+              subject: stmt.subject,
+              type: stmt.object,
+              degree: 0
+            });
+          }
+        });
+
+        // then we get all the links between the nodes, turning them
+        // around if we need to
+        const lmap = {};
+        const links = this.links = [];
+        nodes.forEach(rec => {
+          // we already know these are here
+          graph.match(rec.subject).forEach(stmt => {
+            // only look at the edges connecting nodes we already have
+            if (!(RDF__namespace.isNamedNode(stmt.object) && nmap[stmt.object.value])) return;
+
+            // gotta say, i can get used to destructuring binds
+            let {
+              subject: s,
+              predicate: p,
+              object: o
+            } = stmt;
+
+            // count the degree here so you don't get distorted
+            nmap[stmt.subject.value].degree++;
+            nmap[stmt.object.value].degree++;
+            if (prefer[p.value]) {
+              s = stmt.object;
+              p = inverses[p.value];
+              o = stmt.subject;
+            }
+
+            // XXX again i suspect this is not necessary now
+            let src = this.rewriteUUID(s);
+            let tgt = this.rewriteUUID(o);
+
+            // console.log(src, tgt);
+
+            // this ensures we have no duplicate edges
+            if (!lmap[p.value]) lmap[p.value] = {};
+            if (!lmap[p.value][s.value]) lmap[p.value][s.value] = {};
+            if (lmap[p.value][s.value][o.value]) return;
+            links.push(lmap[p.value][s.value][o.value] = {
+              source: src.value,
+              // for d3
+              target: tgt.value,
+              // for d3
+              subject: s,
+              predicate: p,
+              object: o
+            });
+          });
+        });
+
+        // initialize the simulation
+
+        const fn = d3__namespace.forceManyBody();
+        const fl = d3__namespace.forceLink(links).id(_ref2 => {
+          let {
+            index: i
+          } = _ref2;
+          return nodes[i].id;
+        });
+        const fc = d3__namespace.forceCollide(20);
+        const maxDegree = nodes.reduce((weight, node) => node.degree > weight ? node.degree : weight, 0);
+
+        // set repulsion strength
+        fn.strength(d => -d.degree / maxDegree);
+        fn.distanceMin(10);
+        fn.distanceMax(50);
+        const simulation = this.simulation = d3__namespace.forceSimulation(nodes).force('link', fl).force('charge', fn).force('center', d3__namespace.forceCenter(0.25)).force('collide', fc);
+        function ticked() {
+          function ugh(end, coord) {
+            return function (d) {
+              let dx = d.target.x - d.source.x;
+              let dy = d.target.y - d.source.y;
+              let theta = Math.atan2(dy, dx);
+
+              // the value
+              let out = d[end][coord];
+
+              // we have to shorten the line by a certain amount so
+              // the point of the arrowhead touches the edge of the node
+              if (end == 'target') {
+                const t = d.target;
+                // no arrowhead for symmetric properties
+                if (symmetric.some(s => s.equals(t.predicate))) return out;
+
+                // degree divided in half for radius plus ten
+                // for the arrow
+                let mx = Math.cos(theta) * ((t.degree + 10) / 2 + 10);
+                let my = Math.sin(theta) * ((t.degree + 10) / 2 + 10);
+
+                // console.log(mx, my);
+
+                // now we shorten the line
+                out -= coord == 'y' ? my : mx;
+              }
+              return out;
+            };
+          }
+          edge.attr("x1", ugh('source', 'x')).attr("y1", ugh('source', 'y')).attr("x2", ugh('target', 'x')).attr("y2", ugh('target', 'y'));
+          node.attr('transform', d => "translate(".concat(d.x, ",").concat(d.y, ")"));
+
+          //node.attr("cx", d => d.x).attr("cy", d => d.y);
+        }
+        function drag(simulation) {
+          function dragStarted(event) {
+            // XXX magic number 0.3
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+          }
+          function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+          }
+          function dragStopped(event) {
+            event.subject.fx = null;
+            event.subject.fy = null;
+          }
+          return d3__namespace.drag().on('start', dragStarted).on('drag', dragged).on('end', dragStopped);
+        }
+        const edge = svg.append('g').attr('class', 'force edge').selectAll('line').data(links).join('line').attr('about', e => e.source.id).attr('rel', e => ns.abbreviate(e.predicate)).attr('resource', e => e.target.id).attr('class', e => [e.source, e.target].some(x => x.id == window.location.href) ? 'subject' : null)
+        // .attr('marker-end',
+        //       e => `url(#${ns.abbreviate(e.predicate).replace(':', '.')})`)
+        .attr('stroke-width', 1);
+        const nodeHover = state => {
+          return e => {
+            const a = e.currentTarget;
+            const svg = a.ownerSVGElement;
+            const s = window.location.href;
+            const o = a.href.baseVal;
+            Array.from(svg.querySelectorAll("g.edge line[about=\"".concat(o, "\"], g.edge line[resource=\"").concat(o, "\"]"))).forEach(edge => {
+              const es = edge.getAttribute('about');
+              const eo = edge.getAttribute('resource');
+              if (state) edge.classList.add('subject');else if (s != o && s != es && s != eo) {
+                edge.classList.remove('subject');
+              }
+            });
+          };
+        };
+        const defs = svg.append('defs');
+
+        // let's make a bunch of markers then i guess
+        Object.keys(lmap).forEach(predicate => {
+          const about = ns.abbreviate(predicate);
+          const id = about.replace(':', '.'); // make this a legal id
+          ['', '.subject'].forEach(x => {
+            defs.append('marker').attr('id', id + x).attr('markerWidth', 10).attr('markerHeight', 7).attr('refX', 0).attr('refY', 3.5).attr('orient', 'auto').append('polygon').attr('points', '0,0 10,3.5 0,7').attr('class', () => x ? 'subject' : null).attr('about', about);
+          });
+        });
+        svg.append('defs').append('marker').attr('id', 'arrowhead').attr('markerWidth', 10).attr('markerHeight', 7).attr('refX', 0).attr('refY', 3.5).attr('orient', 'auto').append('polygon').attr('points', '0,0 10,3.5 0,7');
+        const node = svg.append('g').attr('class', 'force node').selectAll('a').data(nodes).join('a').attr('class', n => n.id == window.location.href ? 'subject' : null).attr('about', n => n.id) // redundant but xlink:href can't select
+        .attr('xlink:href', n => n.id).attr('typeof', n => ns.abbreviate(n.type)).on('mouseover', nodeHover(true)).on('mouseout', nodeHover(false)).call(drag(simulation));
+        node.append('circle').attr('class', 'target').attr('r', n => n.degree + 10);
+        node.append('circle').attr('r', n => (n.degree + 10) / 2)
+        //          .attr('r',      n => (Math.sqrt(n.degree) + 10) / 2)
+        .append('title').text(n => n.title);
+
+        // pretty sure this markup is wrong
+
+        // move this down here because it misbehaves otherwise
+        simulation.on('tick', ticked);
+      }
+    }
+
+    // add uniq
+    Array.prototype.uniq = Array.prototype.uniq || function () {
+      let cache = new Set();
+      return this.reduce((prev, cur) => {
+        if (!cache.has(cur)) prev.push(cur);
+        cache.add(cur);
+        return prev;
+      }, []);
+    };
+
+    return ForceRDF;
+
+}));

@@ -35,11 +35,14 @@ theme:
         icon: material/weather-night
         name: Switch to dark mode
 
-
 extra:
   social:
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/zell2036.com
     - icon: fontawesome/brands/github
-      link: https://github.com/xaviervxz/xaviervxz.github.io
+      link: https://github.com/xaviervxz/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:inquiries@zell2036.com?subject=About%20the%20Website
 
 plugins:
   - gen-files:
