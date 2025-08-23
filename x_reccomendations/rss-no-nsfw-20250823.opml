@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+  <outline title="Current Favs" text="Current Favs">
+      <outline text="Kill Six Billion Demons" title="Kill Six Billion Demons" type="rss" 
+            xmlUrl="http://killsixbilliondemons.com/feed/" htmlUrl="https://killsixbilliondemons.com"/>
+      <outline text="Scam the Gods" title="Scam the Gods" type="rss" 
+            xmlUrl="https://scamthegods.com/feed.xml" htmlUrl="https://scamthegods.com"/>
+      <outline text="Order of the Stick" title="Order of the Stick" type="rss" 
+            xmlUrl="http://www.giantitp.com/comics/oots.rss" htmlUrl="http://www.giantitp.com/Comics.html"/>
+      <outline text="RISING SAND" title="RISING SAND" type="rss" 
+            xmlUrl="https://risingsand.glass/feed/" htmlUrl="https://risingsand.glass"/>
+      <outline text="Swan Boy" title="Swan Boy" type="rss" 
+            xmlUrl="https://swanboy.com/feed/" htmlUrl="https://swanboy.com"/>
+      <outline text="DRIVE™" title="DRIVE™" type="rss" 
+            xmlUrl="https://www.drivecomic.com/feed/" htmlUrl="https://www.drivecomic.com/"/>
+      <outline text="Clown Corps" title="Clown Corps" type="rss" 
+            xmlUrl="https://clowncorps.net/feed/" htmlUrl="https://clowncorps.net"/>
+      <outline text="Cassiopeia Quinn" title="Cassiopeia Quinn" type="rss" 
+            xmlUrl="https://www.cassiopeiaquinn.com/comic/rss" htmlUrl="https://www.cassiopeiaquinn.com/"/>
+      <outline text="Tiger, Tiger" title="Tiger, Tiger" type="rss" 
+            xmlUrl="https://www.tigertigercomic.com/tiger-tiger/rss" htmlUrl="https://www.tigertigercomic.com/"/>
+      <outline text="The Golden Boar" title="The Golden Boar" type="rss" 
+            xmlUrl="https://www.monster-pulse.com/goldenboar/rss" htmlUrl="https://www.monster-pulse.com/"/>
+      <outline text="Wilde Life" title="Wilde Life" type="rss" 
+            xmlUrl="https://www.wildelifecomic.com/comic/rss" htmlUrl="https://www.wildelifecomic.com/"/>
+      <outline text="Demon&#39;s Mirror" title="Demon&#39;s Mirror" type="rss" 
+            xmlUrl="https://demonsmirror.com/comic/rss" htmlUrl="https://demonsmirror.com/"/>
+      <outline text="Ten Earth Shattering Blows" title="Ten Earth Shattering Blows" type="rss" 
+            xmlUrl="https://tenearthshatteringblows.com/feed" htmlUrl="https://tenearthshatteringblows.com"/>
+      <outline text="Godslave" title="Godslave" type="rss" 
+            xmlUrl="https://www.godslavecomic.com/comic/rss" htmlUrl="https://www.godslavecomic.com/"/>
+      <outline text="Sword Interval" title="RSS" type="rss" 
+            xmlUrl="https://swordinterval.thecomicseries.com/rss/" htmlUrl="https://swordinterval.thecomicseries.com"/>
+      <outline text="Sever and Pierce" title="RSS" type="rss" 
+            xmlUrl="https://severandpierce.thecomicseries.com/rss/" htmlUrl="https://severandpierce.thecomicseries.com"/>
+      <outline text="Shaderunners" title="Shaderunners" type="rss" 
+            xmlUrl="https://shaderunners.com/rss" htmlUrl="https://shaderunners.com"/>
+  </outline>
+  <outline title="Close To Perfect" text="Close To Perfect">
+      <outline text="Three Panel Soul" title="Three Panel Soul" type="rss" 
+            xmlUrl="http://www.threepanelsoul.com/comic/rss" htmlUrl="http://www.threepanelsoul.com/"/>
+      <outline text="Dinosaur Comics!" title="Dinosaur Comics!" type="rss" 
+            xmlUrl="http://qwantz.com/rssfeed.php" htmlUrl="http://www.qwantz.com"/>
+      <outline text="Sam And Fuzzy" title="Sam And Fuzzy" type="rss" 
+            xmlUrl="https://www.samandfuzzy.com/feed" htmlUrl="http://www.samandfuzzy.com/"/>
+      <outline text="Rigsby WI" title="Rigsby WI » Feed" type="rss" 
+            xmlUrl="https://rigsbywi.com/feed/" htmlUrl="https://rigsbywi.com"/>
+      <outline text="Spacetrawler" title="Spacetrawler" type="rss" 
+            xmlUrl="https://www.baldwinpage.com/spacetrawler/feed/" htmlUrl="https://www.baldwinpage.com/spacetrawler"/>
+      <outline text="Existential Comics" title="Existential Comics" type="rss" 
+            xmlUrl="http://existentialcomics.com/rss.xml" htmlUrl="https://existentialcomics.com"/>
+      <outline text="Buttersafe" title="Buttersafe" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/Buttersafe" htmlUrl="http://www.buttersafe.com"/>
+      <outline text="Kidd Commander!" title="Kidd Commander!" type="rss" 
+            xmlUrl="https://kiddcommander.com/?feed=rss2" htmlUrl="https://kiddcommander.com"/>
+      <outline text="Rice-Boy.com Updates" title="Rice-Boy.com Updates" type="rss" 
+            xmlUrl="http://www.rice-boy.com/rss.xml" htmlUrl="http://rice-boy.com"/>
+      <outline text="The Glass Scientists" title="The Glass Scientists" type="rss" 
+            xmlUrl="http://www.theglassscientists.com/?feed=rss2" htmlUrl="https://www.theglassscientists.com/"/>
+      <outline text="Saturday Morning Breakfast Cereal" title="Saturday Morning Breakfast Cereal" type="rss" 
+            xmlUrl="http://www.smbc-comics.com/rss.php" htmlUrl="https://www.smbc-comics.com/"/>
+      <outline text="Girl Genius" title="Girl Genius" type="rss" 
+            xmlUrl="http://www.girlgeniusonline.com/ggmain.rss" htmlUrl="http://www.girlgeniusonline.com/"/>
+      <outline text="Broken" title="Broken" type="rss" 
+            xmlUrl="https://broken.spiderforest.com/comic/rss" htmlUrl="http://broken.spiderforest.com/comic"/>
+  </outline>
+  <outline title="Rare/Dead/Hiatus" text="Rare/Dead/Hiatus">
+      <outline text="Sheldon® Comic Strip: Daily webcomic by Dave Kellett" title="Sheldon® Comic Strip: Daily webcomic by Dave Kellett" type="rss" 
+            xmlUrl="http://cdn.sheldoncomics.com/rss.xml"/>
+      <outline text="It&#39;s Walky!" title="It&#39;s Walky!" type="rss" 
+            xmlUrl="http://www.itswalky.com/feed/" htmlUrl="http://www.itswalky.com"/>
+      <outline text="Brainchild" title="Brainchild" type="rss" 
+            xmlUrl="https://brainchild.suzannegeary.com/feed/" htmlUrl="https://brainchild.suzannegeary.com"/>
+      <outline text="STEEPLE – A Scary Go Round Comic" title="STEEPLE – A Scary Go Round Comic" type="rss" 
+            xmlUrl="https://steeple.church/feed/" htmlUrl="https://steeple.church"/>
+      <outline text="Guilded Age" title="Guilded Age" type="rss" 
+            xmlUrl="http://guildedage.net/feed/" htmlUrl="http://guildedage.net"/>
+      <outline text="BACK" title="BACK" type="rss" 
+            xmlUrl="http://backcomic.com/rss.xml" htmlUrl="http://backcomic.com/"/>
+      <outline text="Bolt City Productions" title="Bolt City Productions" type="rss" 
+            xmlUrl="http://boltcity.com/feed/" htmlUrl="https://boltcity.com"/>
+      <outline text="Invisible Bread » Feed" title="Invisible Bread » Feed" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/InvisibleBread" htmlUrl="https://invisiblebread.com"/>
+      <outline text="http://deadwinter.cc/dwrss.xml" title="http://deadwinter.cc/dwrss.xml" type="rss" 
+            xmlUrl="http://deadwinter.cc/dwrss.xml" htmlUrl="http://deadwinter.cc"/>
+      <outline text="The Meek | An epic adventure webcomic" title="The Meek | An epic adventure webcomic" type="rss" 
+            xmlUrl="http://www.meekcomic.com/feed/" htmlUrl="https://www.meekcomic.com"/>
+      <outline text="Not Drunk Enough" title="Not Drunk Enough" type="rss" 
+            xmlUrl="http://www.ndecomic.com/rss.php" htmlUrl="https://www.ndecomic.com/"/>
+      <outline text="The Chapel" title="The Chapel" type="rss" 
+            xmlUrl="https://www.chapelcomic.com/rss.xml" htmlUrl="https://www.chapelcomic.com"/>
+      <outline text="What If?" title="What If?" type="rss" 
+            xmlUrl="https://what-if.xkcd.com/feed.atom" htmlUrl="https://what-if.xkcd.com"/>
+      <outline text="Nedroid Picture Diary 2" title="Nedroid Picture Diary 2" type="rss" 
+            xmlUrl="http://nedroid.com/feed/" htmlUrl="http://nedroid.com"/>
+      <outline text="The Last Halloween" title="The Last Halloween" type="rss" 
+            xmlUrl="https://www.last-halloween.com/posts.rss" htmlUrl="https://www.last-halloween.com/"/>
+      <outline text="Power Nap RSS Feed" title="Power Nap RSS Feed" type="rss" 
+            xmlUrl="http://www.powernapcomic.com/index.xml" htmlUrl="http://www.powernapcomic.com/"/>
+      <outline text="Runa" title="Runa" type="rss" 
+            xmlUrl="https://runacomic.com/feed/" htmlUrl="https://runacomic.com"/>
+      <outline text="New - Ryan Harby" title="New - Ryan Harby" type="rss" 
+            xmlUrl="https://www.iamhoneydill.com/new-stuff?format=rss" htmlUrl="https://ryanharby.com/new-stuff/"/>
+      <outline text="The Little Warrior" title="The Little Warrior" type="rss" 
+            xmlUrl="https://thelittlewarriorcomic.com/fr/feed/" htmlUrl="https://thelittlewarriorcomic.com/fr/"/>
+      <outline text="The Adventures of Dr. McNinja" title="The Adventures of Dr. McNinja" type="rss" 
+            xmlUrl="http://drmcninja.com/feed/"/>
+      <outline text="Wondermark" title="Wondermark" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/wondermark" htmlUrl="https://wondermark.com"/>
+      <outline text="Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995" title="Drugs and Wires – Cyberpunk Misadventures in the Dark Future of 1995" type="rss" 
+            xmlUrl="https://www.drugsandwires.fail/feed/" htmlUrl="https://www.drugsandwires.fail"/>
+      <outline text="Otherknown" title="Otherknown" type="rss" 
+            xmlUrl="https://www.otherknown.com/comic/rss" htmlUrl="https://www.otherknown.com"/>
+      <outline text="Comics – There You Ain&#39;t!" title="Comics – There You Ain&#39;t!" type="rss" 
+            xmlUrl="https://www.thereyouaint.com/comic/feed" htmlUrl="https://thereyouaint.com"/>
+  </outline>
+  <outline title="Undeclared" text="Undeclared">
+      <outline text="Heroes of Thantopolis" title="Heroes of Thantopolis" type="rss" 
+            xmlUrl="https://www.heroesofthantopolis.com/comic/rss" htmlUrl="https://www.heroesofthantopolis.com/"/>
+      <outline text="Western Deep" title="Western Deep" type="rss" 
+            xmlUrl="https://westerndeep.net/feed/" htmlUrl="https://westerndeep.net"/>
+      <outline text="Goblins" title="Goblins" type="rss" 
+            xmlUrl="http://www.goblinscomic.org/feed/" htmlUrl="https://www.goblinscomic.com/"/>
+      <outline text="Schlock Mercenary" title="Schlock Mercenary" type="rss" 
+            xmlUrl="http://www.schlockmercenary.com/rss/" htmlUrl="http://www.schlockmercenary.com/"/>
+      <outline text="Channelate" title="Channelate" type="rss" 
+            xmlUrl="http://www.channelate.com/feed/" htmlUrl="https://www.channelate.com"/>
+      <outline text=" » Arcade Rage" title=" » Arcade Rage" type="rss" 
+            xmlUrl="https://arcaderage.co/feed/" htmlUrl="https://arcaderage.co"/>
+      <outline text="Things in Squares" title="Things in Squares" type="rss" 
+            xmlUrl="http://www.thingsinsquares.com/feed/" htmlUrl="https://www.thingsinsquares.com/"/>
+      <outline text="Real Science Adventures" title="Real Science Adventures" type="rss" 
+            xmlUrl="http://www.atomic-robo.com/rsa/rss" htmlUrl="https://www.atomic-robo.com/"/>
+      <outline text="Swords" title="Swords" type="rss" 
+            xmlUrl="https://swordscomic.com/swords/feed/"/>
+      <outline text="Kings of Sorts » Feed" title="Kings of Sorts » Feed" type="rss" 
+            xmlUrl="https://kingsofsorts.com/feed/" htmlUrl="https://kingsofsorts.com"/>
+      <outline text="Mr. Lovenstein" title="Mr. Lovenstein" type="rss" 
+            xmlUrl="https://www.mrlovenstein.com/rss.xml"/>
+      <outline text="Awkward Zombie" title="Awkward Zombie" type="rss" 
+            xmlUrl="https://www.awkwardzombie.com/awkward-zombie/rss" htmlUrl="https://www.awkwardzombie.com/"/>
+      <outline text="Savestate" title="Savestate" type="rss" 
+            xmlUrl="http://www.savestatecomic.com/feed/" htmlUrl="https://www.savestatecomic.com/"/>
+      <outline text="Scenes From A Multiverse" title="Scenes From A Multiverse" type="rss" 
+            xmlUrl="http://amultiverse.com/feed/" htmlUrl="http://amultiverse.com"/>
+      <outline text="O Sarilho" title="O Sarilho" type="rss" 
+            xmlUrl="https://sarilho.net/en/feed" htmlUrl="https://sarilho.net/en"/>
+      <outline text="comic" title="comic" type="rss" 
+            xmlUrl="http://skeletonking.rip/comic/rss" htmlUrl="http://skeletonking.rip/"/>
+      <outline text="Lies Within" title="Lies Within" type="rss" 
+            xmlUrl="https://www.lieswithincomic.com/comic/rss" htmlUrl="https://www.lieswithincomic.com/"/>
+      <outline text="comic" title="comic" type="rss" 
+            xmlUrl="http://www.fairmeadowcomic.com/comic/rss" htmlUrl="http://fairmeadowcomic.com/"/>
+      <outline text="tuppence for stardust" title="tuppence for stardust" type="rss" 
+            xmlUrl="https://tuppenceforstardust.spiderforest.com/comic/rss" htmlUrl="http://tuppenceforstardust.spiderforest.com/comic"/>
+      <outline text="Comic" title="Comic" type="rss" 
+            xmlUrl="https://www.wychwoodcomic.com/comic/rss" htmlUrl="https://wychwoodcomic.com/"/>
+      <outline text="Hans Vogel is Dead" title="Hans Vogel is Dead" type="rss" 
+            xmlUrl="https://www.hansvogelisdead.com/feed/" htmlUrl="https://www.hansvogelisdead.com/"/>
+      <outline text="mcnostril comics" title="mcnostril comics" type="rss" 
+            xmlUrl="https://mcnostril.com/feed/" htmlUrl="https://mcnostril.com"/>
+      <outline text="Dresden Codak" title="Dresden Codak" type="rss" 
+            xmlUrl="http://dresdencodak.com/feed/" htmlUrl="https://dresdencodak.com/"/>
+      <outline text="The Thief of Tales" title="The Thief of Tales" type="rss" 
+            xmlUrl="https://www.thethiefoftales.com/feed/" htmlUrl="https://www.thethiefoftales.com"/>
+      <outline text="Series: The Guy She Was Interested in Wasn&#39;t a Guy At All" title="Series: The Guy She Was Interested in Wasn&#39;t a Guy At All" type="rss" 
+            xmlUrl="https://dynasty-scans.com/series/the_guy_she_was_interested_in_wasnt_a_guy_at_all.atom" htmlUrl="https://dynasty-scans.com"/>
+      <outline text="Nix of Nothing" title="comic" type="rss" 
+            xmlUrl="https://www.nixofnothing.com/comic/rss" htmlUrl="https://nixofnothing.com/"/>
+      <outline text="Kingfisher" title="Kingfisher" type="rss" 
+            xmlUrl="https://kingfishercomic.com/rss" htmlUrl="https://kingfishercomic.com"/>
+      <outline text="Tigress Queen" title="Tigress Queen" type="rss" 
+            xmlUrl="https://www.tigressqueen.com/comic/rss" htmlUrl="https://www.tigressqueen.com"/>
+      <outline text="Backlash" title="Backlash » Feed" type="rss" 
+            xmlUrl="https://backlashcomic.com/feed/" htmlUrl="https://backlashcomic.com"/>
+      <outline text="Sleepless Domain" title="Sleepless Domain" type="rss" 
+            xmlUrl="https://www.sleeplessdomain.com/comic/rss" htmlUrl="https://www.sleeplessdomain.com/"/>
+      <outline text="Castoff" title="Castoff" type="rss" 
+            xmlUrl="https://castoff-comic.com/comic/rss?id=1" htmlUrl="http://castoff-comic.com/comic"/>
+      <outline text="Thistil Mistil Kistil" title="Thistil Mistil Kistil" type="rss" 
+            xmlUrl="https://www.tmkcomic.com/feed/" htmlUrl="https://www.tmkcomic.com"/>
+      <outline text="Superpose" title=" » Feed" type="rss" 
+            xmlUrl="https://superpose.superposecomic.com/feed/" htmlUrl="https://superpose.superposecomic.com"/>
+      <outline text="Dancing Bones" title="RSS" type="rss" 
+            xmlUrl="https://bone.dance/rss/" htmlUrl="https://bone.dance"/>
+      <outline text="Autumn Wing and the Crown of Fire" title="Autumn Wing and the Crown of Fire" type="rss" 
+            xmlUrl="https://autumnwing.spiderforest.com/comic/rss?id=1" htmlUrl="http://autumnwing.spiderforest.com/comic" scanDelay="10080"/>
+      <outline text="Tales From Alderwood" title="Tales From Alderwood" type="rss" 
+            xmlUrl="https://alderwood.the-comic.org/rss/" htmlUrl="https://alderwood.the-comic.org"/>
+      <outline text="NonCanon" title="NonCanon" type="rss" 
+            xmlUrl="https://www.noncanon.com/feed.xml" htmlUrl="https://www.noncanon.com"/>
+      <outline text="The Whitch Door" title="The Whitch Door" type="rss" 
+            xmlUrl="https://www.thewitchdoor.com/rss.php" htmlUrl="https://www.thewitchdoor.com/"/>
+      <outline text="THE TITAN » Feed" title="THE TITAN » Feed" type="rss" 
+            xmlUrl="https://titancomic.net/feed/" htmlUrl="https://titancomic.net"/>
+      <outline text="HELLO FROM HALO HEAD » Feed" title="HELLO FROM HALO HEAD » Feed" type="rss" 
+            xmlUrl="https://halo-head.com/feed/" htmlUrl="https://halo-head.com"/>
+      <outline text="Softies » Feed" title="Softies » Feed" type="rss" 
+            xmlUrl="https://softies.net/feed/" htmlUrl="https://softies.net"/>
+      <outline text="The Space Between » Feed" title="The Space Between » Feed" type="rss" 
+            xmlUrl="https://www.thespacebetween-comic.com/feed/" htmlUrl="https://www.thespacebetween-comic.com"/>
+      <outline text="White Noise" title="White Noise" type="rss" 
+            xmlUrl="https://www.white-noise-comic.com/comic/rss" htmlUrl="https://www.white-noise-comic.com/"/>
+      <outline text="There You Ain&#39;t! » Feed" title="There You Ain&#39;t! » Feed" type="rss" 
+            xmlUrl="https://thereyouaint.com/feed/" htmlUrl="https://thereyouaint.com"/>
+      <outline text="StarHammer" title="StarHammer" type="rss" 
+            xmlUrl="https://www.starhammercomic.com/comic/rss" htmlUrl="https://www.starhammercomic.com/"/>
+      <outline text="Greatures » Feed" title="Greatures » Feed" type="rss" 
+            xmlUrl="https://greatures.com/feed/" htmlUrl="https://greatures.com"/>
+  </outline>
+  <outline title="Consistent" text="Consistent">
+      <outline text="Dumbing of Age" title="Dumbing of Age" type="rss" 
+            xmlUrl="https://www.dumbingofage.com/feed/" htmlUrl="https://www.dumbingofage.com"/>
+      <outline text="Poorly Drawn Lines" title="Poorly Drawn Lines" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/PoorlyDrawnLines" htmlUrl="https://poorlydrawnlines.com"/>
+      <outline text="xkcd.com" title="xkcd.com" type="rss" 
+            xmlUrl="http://xkcd.com/rss.xml" htmlUrl="https://xkcd.com/"/>
+      <outline text="Atomic Robo" title="Atomic Robo" type="rss" 
+            xmlUrl="http://www.atomic-robo.com/rss.php" htmlUrl="https://www.atomic-robo.com/"/>
+      <outline text="Cat and Girl" title="Cat and Girl" type="rss" 
+            xmlUrl="https://catandgirl.com/feed/" htmlUrl="https://catandgirl.com"/>
+      <outline text="Forward Slash Scare" title="Forward Slash Scare" type="rss" 
+            xmlUrl="https://badmachinery.com/feed/" htmlUrl="https://badmachinery.com/"/>
+  </outline>
+  <outline title="High Art" text="High Art">
+      <outline text="The Perry Bible Fellowship" title="The Perry Bible Fellowship" type="rss" 
+            xmlUrl="https://pbfcomics.com/feed/" htmlUrl="https://pbfcomics.com/"/>
+      <outline text="Vainglorious" title="Vainglorious" type="rss" 
+            xmlUrl="https://www.vaingloriouscomic.com/comic/rss" htmlUrl="https://www.vaingloriouscomic.com/"/>
+      <outline text="Johnny Wander" title="Johnny Wander" type="rss" 
+            xmlUrl="http://www.johnnywander.com/comic/rss" htmlUrl="https://www.johnnywander.com/"/>
+      <outline text="Phantomarine" title="Phantomarine" type="rss" 
+            xmlUrl="https://www.phantomarine.com/comic/rss" htmlUrl="https://phantomarine.com/"/>
+      <outline text="Bybloemen" title="Bybloemen" type="rss" 
+            xmlUrl="https://www.bybloemen.com/comic/rss" htmlUrl="https://www.bybloemen.com/"/>
+      <outline text="Daughter of the Lilies" title="Daughter of the Lilies" type="rss" 
+            xmlUrl="https://www.daughterofthelilies.com/dotl/rss" htmlUrl="https://www.daughterofthelilies.com"/>
+      <outline text="Bicycle Boy" title="Bicycle Boy" type="rss" 
+            xmlUrl="https://www.bicycleboy.net/comic/rss" htmlUrl="https://www.bicycleboy.net/"/>
+  </outline>
+  <outline title="Software" text="Software">
+      <outline text="Piekniewski&#39;s blog" title="Piekniewski&#39;s blog" type="rss" 
+            xmlUrl="https://blog.piekniewski.info/feed/" htmlUrl="https://blog.piekniewski.info"/>
+      <outline text="Aftermath" title="Aftermath" type="rss" 
+            xmlUrl="https://aftermath.site/feed" htmlUrl="https://aftermath.site/"/>
+      <outline text="Pivot to AI » Feed" title="Pivot to AI » Feed" type="rss" 
+            xmlUrl="https://pivot-to-ai.com/feed/" htmlUrl="https://pivot-to-ai.com"/>
+      <outline text="EIEIO games" title="EIEIO games" type="rss" 
+            xmlUrl="https://eieio.games/feed.xml" htmlUrl="https://eieio.games"/>
+      <outline text="Ludicity" title="Ludicity" type="rss" 
+            xmlUrl="https://ludic.mataroa.blog/rss/" htmlUrl="https://ludic.mataroa.blog"/>
+      <outline text="Web3 is going just great" title="Web3 is going just great" type="rss" 
+            xmlUrl="https://web3isgoinggreat.com/feed.xml" htmlUrl="https://web3isgoinggreat.com"/>
+      <outline text="The Luddite" title="The Luddite" type="rss" 
+            xmlUrl="https://theluddite.org/feed.rss" htmlUrl="https://theluddite.org"/>
+  </outline>
+  <outline title="RPGS" text="RPGS">
+      <outline text="A Collection of Unmitigated Pedantry" title="A Collection of Unmitigated Pedantry" type="rss" 
+            xmlUrl="https://acoup.blog/feed/" htmlUrl="https://acoup.blog"/>
+      <outline text="Goblin Punch" title="Goblin Punch" type="rss" 
+            xmlUrl="https://goblinpunch.blogspot.com/feeds/posts/default" htmlUrl="https://goblinpunch.blogspot.com/"/>
+      <outline text="BASTIONLAND" title="BASTIONLAND" type="rss" 
+            xmlUrl="https://www.bastionland.com/feeds/posts/default" htmlUrl="https://www.bastionland.com/"/>
+      <outline text="Prismatic Wasteland" title="Prismatic Wasteland" type="rss" 
+            xmlUrl="https://www.prismaticwasteland.com/blog?format=rss" htmlUrl="https://www.prismaticwasteland.com/"/>
+      <outline text="False Machine" title="False Machine" type="rss" 
+            xmlUrl="https://falsemachine.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="https://falsemachine.blogspot.com/"/>
+  </outline>
+  <outline title="Activism" text="Activism">
+      <outline text="Pluralistic: Daily links from Cory Doctorow" title="Pluralistic: Daily links from Cory Doctorow" type="rss" 
+            xmlUrl="https://pluralistic.net/feed/" htmlUrl="https://pluralistic.net"/>
+      <outline text="Deeplinks" title="Deeplinks" type="rss" 
+            xmlUrl="https://www.eff.org/rss/updates.xml" htmlUrl="https://www.eff.org/rss/updates.xml"/>
+      <outline text="Open Markets" title="RSS Feed" type="rss" 
+            xmlUrl="https://www.openmarketsinstitute.org/publications?format=rss" htmlUrl="https://www.openmarketsinstitute.org/publications/"/>
+      <outline text="Court Watch" title="Court Watch" type="rss" 
+            xmlUrl="https://rss.beehiiv.com/feeds/BTVqUNjsIO.xml" htmlUrl="https://www.courtwatch.news/"/>
+  </outline>
+  <outline title="MiscBlogs" text="MiscBlogs">
+      <outline text="The Onion" title="The Onion" type="rss" 
+            xmlUrl="https://www.theonion.com/rss" htmlUrl="https://theonion.com/"/>
+      <outline text="The Name of My Next Band" title="The Name of My Next Band" type="rss" 
+            xmlUrl="https://nextbandname.tumblr.com/rss" htmlUrl="https://nextbandname.tumblr.com/"/>
+      <outline text="RSS Feed for Perfect Sentences" title="RSS Feed for Perfect Sentences" type="rss" 
+            xmlUrl="https://buttondown.com/perfectsentences/rss" htmlUrl="https://buttondown.com/perfectsentences"/>
+      <outline text="An und für sich » Feed" title="An und für sich » Feed" type="rss" 
+            xmlUrl="https://itself.blog/feed/" htmlUrl="https://itself.blog"/>
+      <outline text="The Comics Curmudgeon" title="The Comics Curmudgeon" type="rss" 
+            xmlUrl="https://joshreads.com/feed/" htmlUrl="https://joshreads.com"/>
+      <outline text="last Added Icons" title="last Added Icons" type="rss" 
+            xmlUrl="https://game-icons.net/feeds/icons.xml" htmlUrl="https://game-icons.net"/>
+  </outline>
+  <outline title="Lil bit broken" text="Lil bit broken">
+      <outline text="Explosm.net" title="Explosm.net" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/Explosm" htmlUrl="http://explosm.net"/>
+      <outline text="Girls With Slingshots" title="Girls With Slingshots" type="rss" 
+            xmlUrl="https://www.girlswithslingshots.com/comic/rss" htmlUrl="https://www.girlswithslingshots.com/" scanDelay="10080"/>
+      <outline text="Nothing Doing" title="RSS" type="rss" 
+            xmlUrl="https://horseonvhs.com/nothingdoing/rss.xml" htmlUrl="https://horseonvhs.com/nothingdoing/"/>
+      <outline text="Sombulus - A TueThursday Webcomic" title="Sombulus - A TueThursday Webcomic" type="rss" 
+            xmlUrl="http://www.sombulus.com/feed"/>
+      <outline text="Innsmouth Garden Society" title="Innsmouth Garden Society" type="rss" 
+            xmlUrl="https://www.igscomic.com/igscomic?format=rss" htmlUrl="https://www.igscomic.com/"/>
+      <outline text="https://courtofroses.spiderforest.com/rss.php" title="https://courtofroses.spiderforest.com/rss.php" type="rss" 
+            xmlUrl="https://courtofroses.spiderforest.com/rss.php" htmlUrl="https://courtofroses.spiderforest.com/" scanDelay="10080"/>
+      <outline text="Ava&#39;s Demon" title="Ava&#39;s Demon" type="rss" 
+            xmlUrl="http://feeds.feedburner.com/AvasDemon" htmlUrl="https://www.avasdemon.com/" scanDelay="10080"/>
+  </outline>
+</body>
+</opml>
