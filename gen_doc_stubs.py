@@ -40,6 +40,7 @@ def create_path_to_nav_lookup(start_path : Path) -> None:
     for index_path in indices:
         relative_path = index_path.relative_to("docs")
         parts = relative_path.parts
+        # add an "If In Nav Exclusions" so people canit poke around at the 404s
         title = get_title(index_path)
         # If there's only one Part in the Path, then this is at the Root level, and at the Root there isn't a difference between Index & Article
         if len(parts) <= 1:
