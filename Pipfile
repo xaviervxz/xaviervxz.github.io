@@ -1,9 +1,11 @@
-
 [[source]]
-verify_ssl = false
-name = "pip_conf_index_global"
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
 
 [packages]
+
+[dev-packages]
 mkdocs="*"
 mkdocs-material="*"
 mkdocs-git-revision-date-localized-plugin="*"
@@ -12,8 +14,7 @@ mkdocs-ezlinks-plugin="*"
 mkdocs-macros-plugin="*"
 mkdocs-literate-nav="*"
 mkdocs-gen-files="*"
-
-[dev-packages]
+mkdocs-section-index="*"
 
 [requires]
 python_version = "3.12"

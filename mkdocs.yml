@@ -22,19 +22,19 @@ theme:
     - content.tabs.link
     - content.tooltips
   palette:
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
     # Palette toggle for dark mode
     - scheme: default
-      primary: blue
+      primary: red
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
 
-    # Palette toggle for light mode
-    - scheme: slate
-      primary: red
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
 
 extra:
   social:

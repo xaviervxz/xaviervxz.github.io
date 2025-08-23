@@ -8,7 +8,7 @@ import mkdocs_gen_files
 
 debug = False
 
-def log(log_string, to_print=False):
+def log(log_string, to_print=True):
     if debug or to_print:
         print(log_string)
 
