@@ -12,7 +12,7 @@ Because society only works if everyone does their part. There's the obviously us
 but there are many tasks that are further away from a humanist worldview. 
 <!-- If you've ever wondered why someone in Silicon Valley is spending a billion dollars to automate home-made cookies || saving this because I think the metaphor can be salvaged -->
 It's hard _not_ to see people making decisions that favor themselves over the people and projects they're supposed to be
-taking responsibility for, but it's easy to criticise than it is to throw your hat in the ring.
+taking responsibility for, but it's easier to criticise than it is to throw your hat in the ring.
 
 And you, a random resident of the United States of America, are more qualified to make decisions for the people of this
 country than any of the avaricious husks that are trying to drain everyone else's pocketbooks. You've struggled;
