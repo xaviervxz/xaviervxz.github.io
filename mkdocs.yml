@@ -57,7 +57,6 @@ plugins:
       enable_creation_date: true
       type: date
   - glightbox
-  - ezlinks
 #  - mkdocs-backlinks # Would be cool; not plug & play, though
   - macros:
       module_name: misc_macros
