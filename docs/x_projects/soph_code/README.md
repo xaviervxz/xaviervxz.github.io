@@ -1,8 +1,10 @@
 ---
-title: Installing Jupiter Notebook w UV
+title: Create a Python Environment
 categories:
   - education
 ---
+
+See the [source code](https://github.com/xaviervxz/xaviervxz.github.io/tree/main/docs/x_projects/soph_code)
 
 ## Installing This Stuff
 

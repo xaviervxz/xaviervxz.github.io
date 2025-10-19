@@ -35,7 +35,7 @@ def get_title(path: Path) -> str:
 url_to_nav = {}
 
 def create_path_to_nav_lookup(start_path : Path) -> None:
-    indices = list(sorted(start_path.glob("**/index.md")))
+    indices = sorted( list(start_path.glob("**/index.md")) + list(start_path.glob("**/README.md")))
     indices.sort(key=lambda p: len(p.parts))
     for index_path in indices:
         relative_path = index_path.relative_to("docs")
