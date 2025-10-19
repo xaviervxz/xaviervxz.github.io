@@ -4,7 +4,7 @@ title: Trayodasham
 
 A Game pulled from History's History.
 
-Recommended materials:
+### Recommended materials:
 - 4-color deck of cards
 - 13 unique sets of tokens to serve as badges
 
