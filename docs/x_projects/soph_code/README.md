@@ -1,4 +1,8 @@
-luv u <3
+---
+title: Installing Jupiter Notebook w UV
+categories:
+  - education
+---
 
 ## Installing This Stuff
 
