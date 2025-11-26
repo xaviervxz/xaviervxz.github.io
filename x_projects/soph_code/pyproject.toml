@@ -5,8 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "chempy>=0.10.1",
     "ipynb>=0.5.1",
+    "ipywidgets>=8.1.8",
     "jupyterlab>=4.4.9",
     "matplotlib>=3.10.7",
     "numpy>=2.3.4",
+    "pandas>=2.3.3",
+    "pint>=0.25.2",
+    "plotly>=6.5.0",
+    "seaborn>=0.13.2",
 ]
