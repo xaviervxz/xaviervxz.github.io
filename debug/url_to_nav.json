@@ -1,0 +1,18 @@
+{
+    "policies": "Policies",
+    "site-pages": "Site Pages (FOR DEBUGGING)",
+    "x_projects": "Personal Projects",
+    "x_recomendations": "Things I Like",
+    "x_projects/home-server": "Home Server Design",
+    "x_projects/languages": "Languages",
+    "x_projects/soph_code": "Create a Python Environment",
+    "x_projects/trayodasham": "Trayodasham",
+    "x_projects/website": "Website Improvements",
+    "x_projects/languages/example": "",
+    "x_projects/languages/golang": "Golang",
+    "x_projects/soph_code/.venv/Lib/site-packages/jupyter_server/i18n": "",
+    "x_projects/soph_code/.venv/Lib/site-packages/nbconvert/templates": "",
+    "x_projects/soph_code/.venv/Lib/site-packages/nbconvert/templates/skeleton": "",
+    "x_projects/soph_code/.venv/Lib/site-packages/zmq/backend/cffi": "",
+    "x_projects/soph_code/.venv/Lib/site-packages/debugpy/_vendored/pydevd/pydevd_plugins/extensions": ""
+}

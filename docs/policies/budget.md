@@ -7,7 +7,8 @@ tags:
   - campaign
 ---
 
-<!-- Title becomes Main Header -->
+<!-- Title becomes Main Header, no need for a top-level title within the .md itself. -->
+
 Zell 2036's Position on the Federal Budget
 
 ## Problem Statement

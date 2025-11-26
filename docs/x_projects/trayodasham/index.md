@@ -9,8 +9,8 @@ A Game pulled from History's History.
 - 13 unique sets of tokens to serve as badges
 
 ## Rules:
-![logo](/x_projects/trayodasham/Trayodasham-nz.png)
+![logo](Trayodasham-nz.png)
 
 ## Zine (for Printing)
-![logo](/x_projects/trayodasham/Trayodasham.png)
+![logo](Trayodasham.png)
 
