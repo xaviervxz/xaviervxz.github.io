@@ -1,0 +1,38 @@
+Lecture thumbnail
+0:01 / 5:13
+
+Instructor: Let's do one more assignment
+
+to make sure that we've got a good solid grasp
+
+on some of the default interfaces
+
+that are included in the standard library.
+
+Now I'm gonna call this a Hard Mode Assignment,
+
+because it is going to require
+
+a little bit of exploration
+
+of the standard documentation on your end.
+
+So I think that this is a little bit
+
+more challenging assignment, but on the flip side,
+
+it's going to be very few lines of code.
+
+So although you will have to do some research on your own,
+
+you're not gonna have to write a lot of code
+
+to really put this assignment together.
+
+So let's talk about what the purpose of this thing is.
+
+We want to create a program
+
+that's going to read the contents of a file
+
+on our local hard drive,
